@@ -1,0 +1,35 @@
+{
+  "repository": "DASE7506-MP2-Checkpoint",
+  "version": "group-router-frozen-v1",
+  "method": "Group-conditional Router",
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "assets": [
+    {
+      "file": "embedding-model.npz",
+      "compressed_bytes": 24786,
+      "uncompressed_bytes": 25504,
+      "sha256": "ab567b03bf3e6ce0a0bf1c03fe36894095cb3f009226b58b2c86b78458429545"
+    },
+    {
+      "file": "pairwise-model.npz",
+      "compressed_bytes": 26578,
+      "uncompressed_bytes": 25640,
+      "sha256": "22fc6ca2f2845b2abbeb1f95de6b07ee06a719fc1b6fe0a056a6474f4bc19658"
+    },
+    {
+      "file": "listwise-model.npz",
+      "compressed_bytes": 25858,
+      "uncompressed_bytes": 25232,
+      "sha256": "5a417e8f5640087fcfe912c8a5e3cae567d6612d19a39b53485a28eaf435c060"
+    },
+    {
+      "file": "text-enhanced-meta.npz",
+      "compressed_bytes": 3518,
+      "uncompressed_bytes": 3880,
+      "sha256": "2f6484e1e5cd9b18eed3e3500bdd380c53f5c33786460b45830a973f7fd40e75"
+    }
+  ],
+  "total_uncompressed_bytes": 80256,
+  "total_uncompressed_mib": 0.0765380859375,
+  "official_limit_mib": 16
+}

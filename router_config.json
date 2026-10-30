@@ -1,0 +1,39 @@
+﻿{
+  "method": "Group-conditional Router",
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+
+  "candidate_indices": [0, 1, 2, 3],
+
+  "routing": {
+    "groups_1_2": "text-enhanced-stacking",
+    "groups_3_4": "rule-d"
+  },
+
+  "text_enhanced_stacking": {
+    "feature_dimension": 140,
+    "parseability_fallback": true
+  },
+
+  "rule_d": {
+    "vote_weight": 1.5,
+    "listwise_weight": 0.15,
+    "margin_threshold": 0.391068,
+
+    "switch_condition": {
+      "fusion_prediction_differs_from_listwise": true,
+      "margin_difference_exceeds_threshold": true,
+      "listwise_candidate_minimum_votes": 2
+    },
+
+    "parseability_fallback": true
+  },
+
+  "fallback_policy": "If the selected candidate is unparseable, choose the highest-scoring parseable candidate from the same decision branch. If no candidate is parseable, preserve the original selection.",
+
+  "evaluation_results": {
+    "nested_oof": "4346/4755",
+    "validation": "745/798",
+    "test": "380/467",
+    "test_accuracy_percent": 81.37044967880085
+  }
+}
